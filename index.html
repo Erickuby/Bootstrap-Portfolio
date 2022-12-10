@@ -4,92 +4,144 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
-    />
-    <link
-      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Bootcamp Portfolio</title>
+    <title>Bootstrap Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/aos.css" />
+    <link rel="stylesheet" href="./assets/css/line-awesome.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body>
-    <!-- Navbar Starts-->
 
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
-      <div class="container">
-        <a href="#" class="navbar-brand"
-          >Eric <span class="text-warning">Nwankwo</span></a
-        >
-
+  <body data-bs-spy="scroll" data-bs-target=".navbar">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container flex-lg-column">
+        <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
+          <span class="h3 fw-bold d-block d-lg-none"
+            >Eric <span>Nwankwo</span></span
+          >
+          <img
+            src="./assets/images/Online wishes-amico.svg"
+            class="d-none d-lg-block rounded-circle"
+            alt=""
+          />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navmenu"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="collapse navbar-collapse" id="navmenu">
-          <ul class="navbar-nav ms-auto">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
             <li class="nav-item">
-              <a href="#portfplio" class="nav-link">Portfolio</a>
+              <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#skills" class="nav-link">Skills</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a href="#about-me" class="nav-link">About Me</a>
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reviews">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-
-    <!-- Navbar Ends-->
+    <!-- //NAVBAR -->
 
     <!-- Hero Section Start -->
 
-    <section
-      class="bg-dark text-light p-5 p-lg-0 pt-lg-1 text-center text-sm-start"
-    >
-      <div class="container">
-        <div class="d-sm-flex align-items-center justify-content-between">
-          <div>
-            <h1>Hello, I'm Eric <span class="text-warning">Nwankwo</span></h1>
-            <p class="lead my-4">
-              I am a web developer with a creative eye for building and
-              interactive responsive websites and applications, I specialize in
-              frontend languages like HTML, CSS, Javascript, React and
-              Bootstrap.
-            </p>
-            <button class="btn btn-primary btn-lg">Check Out My Skills</button>
-          </div>
-          <img
-            class="img-fluid w-50 d-none d-sm-block"
-            src="Images/showcase1.svg"
-            alt="web designer"
-          />
-        </div>
-      </div>
-    </section>
+        <div id="content-wrapper">
 
+          <section id="home" class="full-height px-lg-5">
+            <div class="container">
+              <div class="row">
+                  <div class="col-lg-10">
+                      <h1 class="display-4 fw-bold" data-aos="fade-up">I'M A <span class="text-brand">WEB
+                              DEVELOPER</span> BASED IN NEWCASTLE, UK</h1>
+                      <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">I am Eric Nwankwo, And I craft
+                          high-performing and responsive SEO freiendly websites with state-of-the art designs.</p>
+                      <div data-aos="fade-up" data-aos-delay="600">
+                          <a href="#work" class="btn btn-brand me-3">Explore My Work</a>
+                          <a href="#" class="link-custom">Call: (44) 73411 83915</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </section>
+      
     <!-- Hero Section End -->
+
+    <!-- SERVICES -->
+
+    <section id="services" class="full-height px-lg-5">
+      <div class="container">
+
+          <div class="row pb-4" data-aos="fade-up">
+              <div class="col-lg-8">
+                  <h6 class="text-brand">Skills</h6>
+                  <h1>Some of My Skills Includes</h1>
+              </div>
+          </div>
+
+          <div class="row gy-4">
+
+              <div class="col-md-4" data-aos="fade-up">
+                  <div class="service p-4 bg-base rounded-4 shadow-effect">
+                      <div class="iconbox rounded-4">
+                          <i class="las la-feather"></i>
+                      </div>
+                      <h5 class="mt-4 mb-2">HTML</h5>
+                      <p>I'm an expert in using HTML language to structure documents, such as web pages, by defining the different elements, or building blocks, of a document, such as headings, paragraphs, and links. </p>
+                      <a href="#" class="link-custom">Read More</a>
+                  </div>
+              </div>
+
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                  <div class="service p-4 bg-base rounded-4 shadow-effect">
+                      <div class="iconbox rounded-4">
+                          <i class="las la-pencil-ruler"></i>
+                      </div>
+                      <h5 class="mt-4 mb-2">CSS</h5>
+                      <p> With my great CSS skills, I can create and apply styles to any website, control the layout of a web page, and also use it to create responsive designs that adapt to different screen sizes and devices.</p>
+                      <a href="#" class="link-custom">Read More</a>
+                  </div>
+              </div>
+
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                  <div class="service p-4 bg-base rounded-4 shadow-effect">
+                      <div class="iconbox rounded-4">
+                          <i class="las la-laptop-code"></i>
+                      </div>
+                      <h5 class="mt-4 mb-2">JAVASCRIPT</h5>
+                      <p>My ability to create an eye catching and  interactive elements on a web page, such as form validation, animations, and other dynamic effects has made me stand out amongst other developers.</p>
+                      <a href="#" class="link-custom">Read More</a>
+                  </div>
+              </div>
+
+          </div>
+
+      </div>
+  </section>
+
+  <!-- SERVICES -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
@@ -98,15 +150,8 @@
     ></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
 
-    <script>
-      mapboxgl.accessToken =
-        "pk.eyJ1IjoiYnRyYXZlcnN5IiwiYSI6ImNrbmh0dXF1NzBtbnMyb3MzcTBpaG10eXcifQ.h5ZyYCglnMdOLAGGiL1Auw";
-      var map = new mapboxgl.Map({
-        container: "map",
-        style: "mapbox://styles/mapbox/streets-v11",
-        center: [-71.060982, 42.35725],
-        zoom: 18,
-      });
-    </script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
